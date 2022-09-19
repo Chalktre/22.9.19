@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../jQuery.js"></script>
+		<style>
+			.box {
+				width: 300px;
+				height: 300px;
+				background-color: pink;
+			}
+			
+			.cur {
+				background-color: blue;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		
+		<script>
+			$(function(){
+					$('.box').css('background-color', 'yellow')
+					$('.box').addClass('cur')
+					//js优先级比css高
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../jQuery.js"></script>
+		<style>
+			.box {
+				margin: 100px auto;
+				width: 300px;
+				height: 300px;
+				background-color: pink;
+				transition: all 20s;
+			}
+
+			.cur {
+				background-color: red;
+				transform: rotate(360deg);
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- <button class="btn">btn</button> -->
+		<div class="box">abc</div>
+
+		<script>
+			$(function() {
+				$('.box').click(function() {
+					$('.box').toggleClass('cur')
+				})
+			})
+		</script>
+	</body>
+</html>
